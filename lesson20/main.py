@@ -73,15 +73,31 @@ import random
 # print(all_file)
 # file.close()
 
-file = open('lessons/lesson20/test.txt', 'w')
-file.write('HELLO!\nWORLD!')
+# file = open('lessons/lesson20/test.txt', 'w')
+# file.write('HELLO!\nWORLD!')
+# file.close()
+
+# file = open('lessons/lesson20/test.txt', 'r')
+# while True:
+#     symbol = file.read(1)
+#     if len(symbol) == 0:
+#         break
+#     print(symbol)
+
+# file.close()
+
+file = open('lessons/lesson20/text.txt', 'w')
+file.write('Banana\n')
+file.write('Orange\n')
 file.close()
 
-file = open('lessons/lesson20/test.txt', 'r')
+file = open('lessons/lesson20/text.txt')
 while True:
     symbol = file.read(1)
     if len(symbol) == 0:
+        print('The end of the file.')
         break
-    print(symbol)
+    else:
+        print(symbol)
 
 file.close()
