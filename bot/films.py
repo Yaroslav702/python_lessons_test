@@ -1,4 +1,4 @@
-FILMS = {
+films = {
     "Джон Уік 4 (16+)": {
         "site_url": "https://planetakino.ua/movies/john-wick-chapter-4/#today",
         "photo": "https://planetakino.ua/res/get-poster/00000000000000000000000000002667/jw4-vend.jpg",
