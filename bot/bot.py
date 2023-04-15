@@ -5,10 +5,16 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+import os
+from dotenv import load_dotenv
+
 # from keyboards import *
 from films import films
 
-TOKEN='6103082934:AAEn9v6Y3SYmgTGk-b4UYrN7n2b2ZA4hBsI'
+
+load_dotenv()
+
+TOKEN=os.getenv('TOKEN')
 
 logging.basicConfig(level=logging.INFO)
 
