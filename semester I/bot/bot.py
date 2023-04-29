@@ -24,6 +24,14 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 ADMINS = [1050696532]
 
 
+async def set_default_commands(dp):
+    await bot.set_my_commands(
+        [
+            types.BotCommand('start', 'Запустити бота'),
+            types.BotCommand('add_film', 'Додати новий фільм.')
+        ]
+    )
+
 
 @dp.message_handler(commands='start')
 async def start(message: types.Message):
@@ -108,5 +116,9 @@ async def set_photo(message: types.Message, state: FSMContext):
 
 
 
+async def on_startup(dp):
+    await set_default_commands(dp)
+
+
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, on_startup=on_startup)
