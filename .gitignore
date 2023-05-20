@@ -195,3 +195,5 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
 config.txt
 ignored_dir/
+vosk-model-en-us-0.22-lgraph/
+vosk-model-uk-v3-lgraph/
