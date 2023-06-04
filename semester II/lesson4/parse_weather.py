@@ -11,7 +11,8 @@ def parse_weather(city: str):
 
 
 if __name__ == '__main__':
-    city = input('Enter your city: ')
-    weather = parse_weather(city)['main']
-    temp = weather['temp'] - 273.15
-    print(f'City - {city}\nTemperature - {temp}')
+    print(parse_weather('Kyiv'))
+    # city = input('Enter your city: ')
+    # weather = parse_weather(city)['main']
+    # temp = weather['temp'] - 273.15
+    # print(f'City - {city}\nTemperature - {temp}')
